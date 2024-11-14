@@ -1,2 +1,1 @@
-# true.js
-A client JavaScript interpriter
+true interpriter in Client JavaScript
