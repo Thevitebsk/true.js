@@ -7,6 +7,6 @@ function run(){
     if (code[p]=='"'){ts.shift();ts.pop();s.push(ts);m=0};};
     p++
   }
-  output=output+'\nSTACK: ['+s+']'
+  output=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']'
   document.getElementById("console").innerHTML=output
 }
