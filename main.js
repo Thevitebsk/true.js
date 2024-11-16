@@ -4,7 +4,8 @@ function run(){
   while (code.length>p){
     if (code[p]=='"'){m=1;p++};
     if (m==1){ts.push(code[p]) ; if (code[p]=='"'){m=0;break};
-    while(ta.length>1){a=(ts[0].string)+(ts[1].string);alert(a);ts.pop(0);ts.pop(0)ta.reverse();ts.push(a);ts.reverse()};};
+    while(ta.length>1){a=(ts[0].string)+(ts[1].string)
+    ts.pop(0);ts.pop(0)ta.reverse();ts.push(a);ts.reverse()};};
     p++
   }
   output=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length
