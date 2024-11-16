@@ -6,6 +6,6 @@ function run(){
     if (m==1){ts.push(code[p]) ; if (code[p]=='"'){m=0;break};};
     p++
   }
-  output=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']'
+  output=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length
   document.getElementById("console").innerHTML=output
 }
