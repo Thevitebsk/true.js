@@ -4,7 +4,7 @@ function run(){
   while (code.length>p){
     if (code[p]=='"'){m=1;p++};
     if (m==1){ts.push(code[p]);
-    if (code[p]=='"'){s.push(ts[0]);m=0};}
+    if (code[p]=='"'){s.push(ts);m=0};}
     p++
   }
   output=output+'\nSTACK: ['+s+']'
