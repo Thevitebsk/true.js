@@ -3,5 +3,5 @@ function run(){
   var output='';var p=0;var s=[];var ts=[]
   while (code.length>p){p++}
   output=output+'\nSTACK:'+s
-  document.getElementById("output").innerHTML=output
+  document.getElementById("console").innerHTML=output
 }
