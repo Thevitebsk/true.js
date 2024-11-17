@@ -1,6 +1,6 @@
 function run(){
   var code=document.getElementById("program").value;
-  var output='';var p=0;var s=[];var ts=[];m=0;let stringcon="";var num=["0","1","2","3","4","5","6","7","8","9",]
+  var output='';var p=0;var s=[];var ts=[];m=0;let stringcon="";var num=["0","1","2","3","4","5","6","7","8","9"];var input=document.getElementById("input").value;
   while (code.length>p){
     //IN PROGRESS
     if (code[p]=='"'){m=1;p++};
