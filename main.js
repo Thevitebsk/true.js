@@ -3,7 +3,7 @@ function run(){
   var output='';var p=0;var s=[];var ts=[];m=0
   while (code.length>p){
     if (code[p]=='"'){m=1;p++};
-    if (m==1){ts.push(code[p]) ; if (code[p]=='"'){m=0;ts.pop();ts=[ts.join()];};};
+    if (m==1){ts.push(code[p]) ; if (code[p]=='"'){m=0;ts.pop();let ts=[ts.join()];};};
     p++
   }
   output=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length
