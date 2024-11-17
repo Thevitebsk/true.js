@@ -9,6 +9,6 @@ function run(){
     if (code[p]in num){s.push(code[p])} else if (code[p]=="."){output+=s.pop()}
     p++
   }
-  output=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length
-  document.getElementById("console").innerHTML=output
+  fo=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length
+  document.getElementById("console").innerHTML=fo
 }
