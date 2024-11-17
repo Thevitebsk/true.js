@@ -4,7 +4,7 @@ function run(){
   while (code.length>p){
     if (code[p]=='"'){m=1;p++};
     if (m==1){ts.push(code[p]) ; if (code[p]=='"'){m=0;break};
-    while(ts.length>1){a=(ts[0].string)+(ts[1].string)
+    while(ts.length>1){a=(ts[0])+(ts[1])
     ts.pop(0);ts.pop(0);ts.reverse();ts.push(a);ts.reverse()};};
     p++
   }
