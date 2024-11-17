@@ -6,7 +6,7 @@ function run(){
     if (code[p]=='"'){m=1;p++};
     if (m==1){ts.push(code[p]) ; if (code[p]=='"'){m=0;ts.pop();var ts=ts.join('');for(let i=0; i<tempStack.length; i){stringcon+=ts[0];ts.shift()};alert(stringcon);};};
     //IN PROGRESS
-    if (code[p]in num){s.push(code[p])} else if (code[p]=="."){if (s.length>0){output+=s.pop()} else error("STACK EMPTY")}
+    if (code[p]in num){s.push(code[p])} else if (code[p]=="."){if (s.length>0){output+=s.pop()} else {error("STACK EMPTY")}}
     p++
   }
   fo=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length
