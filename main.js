@@ -14,6 +14,6 @@ function run(){
   if (global_end==0){document.getElementById("console").innerHTML=fo}
 }
 function error(e){
-  document.getElementById("console").innerHTML=e+"\nAT SYMBOL #"+(p+1)
+  document.getElementById("console").innerHTML=e+"\nAT SYMBOL #"+p++
   global_end=1
 }
