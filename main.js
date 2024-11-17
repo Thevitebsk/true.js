@@ -2,7 +2,7 @@ var global_end=0;var p=0;
 function run(){
   var code=document.getElementById("program").value;
   var output='';var s=[];var ts=[];m=0;let stringcon="";var num=["0","1","2","3","4","5","6","7","8","9"];var input=document.getElementById("input").value;
-  while (code.length>p or code[p]!=="\n"){
+  while (code.length>p, code[p]!=="\n"){
     //IN PROGRESS
     if (code[p]=='"'){m=1;p++};
     if (m==1){ts.push(code[p]) ; if (code[p]=='"'){m=0;ts.pop();var ts=ts.join('');for(let i=0; i<tempStack.length; i){stringcon+=ts[0];ts.shift()};alert(stringcon);};};
