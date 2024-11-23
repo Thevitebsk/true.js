@@ -3,7 +3,7 @@ function run(){
   var code=document.getElementById("program").value;
   var output='';var s=[];var ts=[];m=0var num=["0","1","2","3","4","5","6","7","8","9"]
   var input=document.getElementById("input").value;var input = input.split("\n");var tv=""
-  while (code.length>p, code[p]!=="\n"){
+  while (code.length>p){
     //IN PROGRESS
     if (code[p]=='"'){m=1;p++};
     if (m==1){ts.push(code[p]) ; if (code[p]=='"'){m=0;ts.pop();};
