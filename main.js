@@ -14,5 +14,4 @@ function main(){
     p++
   }
   fo=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length+'\nINPUT: '+tv
-  if (global_end==0){document.getElementById("console").innerHTML=fo}
 }
