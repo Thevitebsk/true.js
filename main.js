@@ -12,7 +12,7 @@ function main(){
     else if (code[p]=="."){if (s.length>0){output+=s.pop()} else {break};}
     else if (code[p]==","){tv=input[0];input.shift()}
     else if (code[p]=="\n"){break}
-    else if (code[p]=="'"){tv.shift()}
+    else if (code[p]=="'"){tv=tv.slice(1,-1)}
     p++
   }
   fo=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length+'\nINPUT: '+tv
