@@ -9,7 +9,7 @@ function main(){
     if (m==1){ts.push(code[p]) ; if (code[p]=='"'){m=0}};
     //IN PROGRESS
     if (code[p]in num){s.push(code[p])}
-    else if (code[p]=="."){if (s.length>0){output+=s.pop()} else {error("STACK EMPTY");break};}
+    else if (code[p]=="."){if (s.length>0){output+=s.pop()} else {break};}
     else if (code[p]==","){tv=input[0]}
     p++
   }
