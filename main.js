@@ -12,7 +12,7 @@ function main(){
     else if (code[p]=="."){if (s.length>0){output+=s.pop()} else {break};}
     else if (code[p]==","){tv=input[0];input.shift()}
     else if (code[p]=="\n"){break}
-    else if (code[p]=="'"){s.push(tv.substring(tv.lenght,0));tv=tv.substring(1,tv.lenght)}
+    else if (code[p]=="'"){s.push(tv.substring(tv.lenght,0));e=tv.substring(1,tv.lenght);tv=e}
     p++
   }
   fo=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length+'\nINPUT: '+tv
