@@ -1,7 +1,7 @@
 var global_end=0;p=0;
 function main(){
   var code=document.getElementById("program").value;
-  var output='';var s=[];var ts=[];m=0var num=["0","1","2","3","4","5","6","7","8","9"]
+  var output='';var s=[];var ts=[];m=0;var num=["0","1","2","3","4","5","6","7","8","9"]
   var input=document.getElementById("input").value;var input = input.split("\n");var tv=""
   while (code.length>p){
     //IN PROGRESS
