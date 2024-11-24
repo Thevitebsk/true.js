@@ -6,7 +6,7 @@ function main(){
   while (code.length>p){
     //IN PROGRESS
     if (code[p]=='"'){m=1;p++};
-    if (m==1){ts.push(code[p]) ; if (code[p]=='"'){}};
+    if (m==1){ts.push(code[p]) ; if (code[p]=='"'){m=0}};
     //IN PROGRESS
     if (code[p]in num){s.push(code[p])}
     else if (code[p]=="."){if (s.length>0){output+=s.pop()} else {error("STACK EMPTY");break};}
