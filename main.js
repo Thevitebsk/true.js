@@ -11,6 +11,7 @@ function main(){
     if (code[p]in num){s.push(code[p])}
     else if (code[p]=="."){if (s.length>0){output+=s.pop()} else {break};}
     else if (code[p]==","){tv=input[0]}
+    else if (code[p]=="\n"){break}
     p++
   }
   fo=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length+'\nINPUT: '+input
