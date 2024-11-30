@@ -13,6 +13,6 @@ function main(){
     else if (code[p]=="\n"){break}
     p++
   }
-  fo=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length+'\nINPUT: '+tv
+  fo=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length+'\nINPUT: '+tv+"STOPED AT: "+p
   document.getElementById("console").innerHTML=fo
 }
