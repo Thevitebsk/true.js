@@ -1,7 +1,7 @@
 function main(){
-  p=0;var code=document.getElementById("program").value;e=""
+  p=0;var code=document.getElementById("program").value;e="";
   var output='';var s=[];var ts=[];m=0;var num=["0","1","2","3","4","5","6","7","8","9"]
-  var input=document.getElementById("input").value;var input = input.split("\n");var tv="";e=""
+  var input=document.getElementById("input").value;var input = input.split("\n");
   while (code.length>p){
     //IN PROGRESS
     if (code[p]=='"'){m=1;p++};
@@ -13,6 +13,6 @@ function main(){
     else if (code[p]=="\n"){break};
     p++;
   }
-  fo=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length+'\nINPUT: '+tv+"\nSTOPED AT: "+p+"\n"+e
+  fo=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length+"\nSTOPED AT: "+p+"\n"+e
   document.getElementById("console").innerHTML=fo
 }
