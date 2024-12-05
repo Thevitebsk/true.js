@@ -7,9 +7,9 @@ function main(){
     if (code[p]=='"'){m=1;p++};
     while (m==1){if (code[p+1]!=='"'){break;};ts.push(code[p]);p++};
     //IN PROGRESS
-    if (code[p]in num,m==0){s.push(code[p])};
-    else if (code[p]=="."){if (s.length>0){output+=s.pop()} else {break;};};
-    else if (code[p]=="-"){if (s.length>0){s.pop()} else {break}};
+    if (code[p]in num,m==0){s.push(code[p])}
+    else if (code[p]=="."){if (s.length>0){output+=s.pop()} else {break;};}
+    else if (code[p]=="-"){if (s.length>0){s.pop()} else {break}}
     else if (code[p]=="\n"){break};
     p++;
   }
