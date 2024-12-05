@@ -7,10 +7,11 @@ function main(){
     if (code[p]=='"'){m=1;p++};
     while (m==1){ts.push(code[p]);p++;if (code[p+1]!=='"'){break}};
     //IN PROGRESS
-    if (code[p]in num,m==0){s.push(code[p])}
-    else if (code[p]=="."){if (s.length>0){output+=s.pop()} else {break;};}
-    else if (code[p]=="-"){if (s.length>0){s.pop()} else {break}}
-    else if (code[p]=="\n"){break}
+    if (code[p]in num,m==0){s.push(code[p])};
+    else if (code[p]=="."){if (s.length>0){output+=s.pop()} else {break;};};
+    else if (code[p]=="-"){if (s.length>0){s.pop()} else {break}};
+    else if (code[p]=="\n"){break};
+    p++;
   }
   fo=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length+'\nINPUT: '+tv+"\nSTOPED AT: "+p+"\n"+e
   document.getElementById("console").innerHTML=fo
