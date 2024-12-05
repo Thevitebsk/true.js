@@ -4,7 +4,7 @@ function main(){
   var input=document.getElementById("input").value;var input = input.split("\n");var tv="";e=""
   while (code.length>p){
     //IN PROGRESS
-    if (code[p]=='"'){m=1};
+    if (code[p]=='"'){m=1;p++};
     while (m==1){ts.push(code[p]);p++;if (code[p]!=='"'){break}};
     //IN PROGRESS
     if (code[p]in num){s.push(code[p])}
