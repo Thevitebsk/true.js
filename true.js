@@ -5,7 +5,7 @@ function main(){
   while (code.length>p){
     //IN PROGRESS
     if (code[p]=='"'){m=1;p++};
-    while (m==1){ts.push(code[p]);p++;if (code[p]!=='"'){break}};
+    while (m==1){ts.push(code[p]);p++;if (code[p+1]!=='"'){break}};
     //IN PROGRESS
     if (code[p]in num){s.push(code[p])}
     else if (code[p]=="."){if (s.length>0){output+=s.pop()} else {break;};}
