@@ -1,7 +1,6 @@
 function main(){
-  p=0;var code=document.getElementById("program").value;e="";
-  var output='';var s=[];var ts=[];m=0;var num=["0","1","2","3","4","5","6","7","8","9"]
-  var input=document.getElementById("input").value;var input = input.split("\n");
+  p = 0 ; e = ""; output = '' ; s = [] ; ts = [] ; m = 0
+  num = ["0","1","2","3","4","5","6","7","8","9"] ; code = document.getElementById("program").value ; input = document.getElementById("input").value.split("\n");
   while (code.length>p){
     //IN PROGRESS
     if (code[p]=='"'){m=1;p++};
